@@ -1,0 +1,9 @@
+
+
+Juego Serpientes:Es un archivo HTML,solo es descargarlo o copiarlo y correrlo en un navegador.
+La ejecucion sera automatica,si quieres un nuevo recorrido solo debes refrescar la pagina.
+
+Sort: Es un archivo HTML, solo es descargalo o copiarlo y correrlo en unn navegador.
+La ejecucion sera automatica, si quieres nuevo arreglo debes cambiar dentro del Script.
+
+

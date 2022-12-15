@@ -1,0 +1,63 @@
+<h1>JUEGO SERPIENTES</h1>
+
+<script>
+	
+
+var mapa=25;
+
+var atajos = new Array(mapa);
+
+for (var i = 1; i <= mapa; i++){
+   	atajos[i] ;
+}
+
+var acum=0;
+	
+		for (var j = 0; j <= atajos.length; j++){
+
+				var dado = Math.round(Math.random() * (6 - 1) + 1);
+
+
+				acum=acum+dado;
+
+				if (acum<26) {
+
+				//ESCALERA
+				switch(acum)
+				{
+					case 3: acum=11;
+					break;
+					case 6: acum=17;
+					break;
+					case 9: acum=17;
+					break;
+					case 10: acum=12;
+					break;
+					default: break;
+				}
+					//SERPIENTE
+				switch(acum)
+				{
+					case 14: acum=4;
+					break;
+					case 19: acum=8;
+					break;
+					case 22: acum=20;
+					break;
+					case 24: acum=16;
+					break;
+				}
+				
+
+				console.log("Dado arrojado: "+dado);
+				console.log("Jugador avanza a cuadro: "+acum);
+
+				}
+			}
+
+
+
+		console.log("FIN");
+
+
+</script>

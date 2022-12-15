@@ -1,0 +1,27 @@
+<script>
+function merge(izq, der) {
+  let arreglo = [] 
+  while (izq.length && der.length) {
+    
+    if (izq[0] < der[0]) {
+      arreglo.push(izq.shift())
+    } else {
+      arreglo.push(der.shift())
+    }
+  }
+  
+  return [...arreglo, ...izq, ...der]
+}
+
+function mergeSort(arreglo) {
+  
+  if (arreglo.length <= 1) return arreglo
+  let mid = Math.floor(arreglo.length / 2)
+  
+  let izq = mergeSort(arreglo.slice(0, mid))
+  let der = mergeSort(arreglo.slice(mid))
+  return merge(izq, der)
+}
+console.log(mergeSort([1,5, 7, 20, 3])) 
+
+</script>
